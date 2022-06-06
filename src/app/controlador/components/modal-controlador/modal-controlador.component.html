@@ -1,0 +1,59 @@
+<h2 mat-dialog-title>Registrar controlador</h2>
+<mat-dialog-content class="mat-typography">
+    <div class="example-container">
+        <form class="example-form">
+            <mat-form-field class="example-full-width" appearance="fill">
+                <mat-label>Company (disabled)</mat-label>
+                <input matInput disabled value="Google">
+            </mat-form-field>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Nombre</mat-label>
+                <input matInput placeholder="nombre">
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Descripcion</mat-label>
+                <input matInput placeholder="Descripcion">
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="legacy">
+                <mat-label>Protocolo</mat-label>
+                <input matInput placeholder="TCP">
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Dirrecion Ip</mat-label>
+                <input matInput placeholder="192.168.0.1">
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Puerto</mat-label>
+                <input matInput placeholder="0000">
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+            <br>
+            <mat-form-field appearance="legacy">
+                <mat-label>Tiempo de espera</mat-label>
+                <input matInput placeholder="2000">
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+            <mat-form-field appearance="legacy">
+                <mat-label>Contraseña</mat-label>
+                <input matInput>
+                <mat-hint>Hint</mat-hint>
+            </mat-form-field>
+
+
+        </form>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close>Cancelar</button>
+    <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Guardar</button>
+</mat-dialog-actions>
